@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import PSD
+from .models import blog
 
 # Create your views here.
 

@@ -1,9 +1,6 @@
 from django.db import models
-from django.forms import ModelForm
 
 # Create your models here.
-
-#class = table, variable = column
 class PSD(models.Model):
     PSD_value = models.FloatField(blank=True, default=0)
     Freq_value = models.FloatField(blank=True, default=0)
