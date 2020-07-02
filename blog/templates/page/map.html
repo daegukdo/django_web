@@ -3,33 +3,65 @@
 {% block content %}
 <div class="blog">
   <div class="blog-content">
-    <!--Basic Text Block-->
+    <!--text / image split-->
     <div class="row">
-      <h2>Conclusion</h2>
+      <h2>개학 전 한국의 10대 코로나 맵</h2>
       <div class="col-sm-10">
         <div class="blog-basic-text">
-          <p>In conclusion, the brain signal of EEG, body composition before and after performing squatting have been investigated successfully.
-              From the analysis, it shows that PSD value for 14 cycles squatting is the highest value as compared to other cycles.
-              Phase angle obtained from BIA for 14 cycles squatting shows the highest values as compared to other cycles.
-              Therefore, 14 cycles squatting is the best cycle to improve brain’s functionality and body.</p>
+          <p>코로나에 감염된 사람들 중 10대들이 다녀간 장소는 어떻게 될까? 이를 코로나 맵으로 그려 확인해보고자 한다. </p>
+        </div>
+        <br>
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.50)'>
+            <iframe src="{% static 'html/COVID_19_10s_patient_BSS_in_South_Korea.html' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+        <div class="blog-basic-text">
+          <p>이 코로나 맵을 보면 10대 감염자들이 다녀간 곳은 전국에 산발적으로 존재함을 알 수 있다.</p>
         </div>
       </div>
     </div>
 
-    <!--Basic Text Block-->
+    <!--text / image split-->
     <div class="row">
-      <h2>Limitations and Recommendation Future Work</h2>
+      <h2>개학 후 한국의 10대 코로나 맵</h2>
       <div class="col-sm-10">
         <div class="blog-basic-text">
-          <p>Due to time constraints, the experiment is conducted for only 4 subjects.
-              More subjects will be tested for this project in future to obtain accurate results.
-              Next limitation is the result of this project is ambiguous as it is not compared with other activities.
-              The effects of superbrain yoga activity on brain’s functionality cannot be differentiated with the effect of other activities on the brain’s functionality.
-              Therefore, other exercises will be considered in future so that the effects on brain’s functionality can be compared between different activities.
-              The last limitation is EEG device might provide inaccurate results.
-              In future work, Functional Magnetic Resonance Imaging (fMRI) can be used together with the EEG device to obtain more accurate results.
-              This fMRI is used to display the image of brain’s activity.
-              The image is produced by translating the oxygenated haemoglobin flow in the blood component of the brain (Robert Turner and Karl Friston, 1997) (Stuart Clare, 1997).</p>
+          <p>위와 다르게 이번에는 개학 후의 10대 코로나 감염자가 다녀간 장소를 확인해보았다. 역시 코로나 맵으로 그려 확인해보았다. 
+        </div>
+        <br>
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.50)'>
+            <iframe src="{% static 'html/COVID_19_10s_patient_ASS_in_South_Korea.html' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+        <div class="blog-basic-text">
+          <p>이전에 분석한 데이터와 다르게 부산 지역에만 매우 작게 나타났다. kaggle에 공개된 데이터를 확인해본 결과 환자들이 다녀간 곳을 기록한 데이터와 환자의 정보에 대한 데이터에 차이가 있음을 확인하였다. 이러한 코로나 맵으로는 개학 후의 영향을 제대로 알 수 없다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--text / image split-->
+    <div class="row">
+      <h2>한국의 10대 코로나 맵</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>위의 두 개학 전, 후 데이터를 합쳐 한국의 10대 코로나 환자가 다녀간 곳을 코로나 맵으로 확인해보았다. </p>
+        </div>
+        <br>
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.50)'>
+            <iframe src="{% static 'html/COVID_19_10s_patient_in_South_Korea.html' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+        <div class="blog-basic-text">
+          <p>위의 두 데이터에서 알 수 있듯이 데이터를 합쳐서 보아도 개학 후 데이터가 너무 적어 개학 전 코로나 맵과 차이를 보이지 않는다.</p>
         </div>
       </div>
     </div>
