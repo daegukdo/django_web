@@ -9,7 +9,7 @@
       <h2>10대 코로나 감염자에 대한 분석</h2>
       <div class="col-sm-10">
         <div class="blog-basic-text">
-          <p>수많은 코로나 분석이 있어왔다. 하지만 학생, 10댜애 댜한 코로나 분석은 많이 있지 않았다. 10대는 인생의 방향을 잡아가는 삶의 철학을 마음 속에 설립하는 가장 중요한 단계이다. 이러한 중요한 시기에 평범한 삶인 학교가는 것, 함꼐 공부하는 것, 친구와 어울리는 것을 하지 못하는 10대에 대한 분석이 필요하다.</p>
+          <p>수많은 코로나 분석이 있어왔다. 하지만 학생, 10대에 대한 코로나 분석은 많이 있지 않았다. 10대는 인생의 방향을 잡아가는 삶의 철학을 마음 속에 설립하는 가장 중요한 단계이다. 이러한 중요한 시기에 평범한 삶인 학교가는 것, 함꼐 공부하는 것, 친구와 어울리는 것을 하지 못하는 10대에 대한 분석이 필요하다.</p>
         </div>
         <div class="blog-basic-text">
           <p>이러한 분석을 위해 kaggle 사이트의 질병관리본부에서 공유해준 현재 한국의 ㅗ로나 환자 데이터를 바탕으로 분석으로 수행해보고자 한다.</p>
@@ -24,12 +24,10 @@
         <div class="blog-basic-text">
           <p>코로나 감염자는 나이가 많은 사람들 혹은 기저 질환이 있는 사람들에게는 치명적이만 일반적인 사람에게는 치명적이지 않다. 하지만 뛰어난 감염력을 가지고 있는 것이 문제이다. 이러한 특성을 확인하기 위해 현재 힌국의 코로나 감염자들의 현황을 확인해보았다.</p>
         </div>
-        <br>
         <div class="blog-code">
           {% load staticfiles %}
-          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/patient/01_status.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+          <img src="{% static 'img/patient/01_status.png' %}" class="img-responsive"></img>
         </div>
-        <br>
         <div class="blog-basic-text">
           <p>알려진 바와 같이 치명률이 낮음을 확인할 수 있었다. 이 데이터는 모든 환자에 대한 데이터가 아니어서 절반 조금 넘게 완치가 된 것으로 나타난다. 하지만 뉴스 기사 및 실제 발표 자료에 의하면 90%에 가까운 사람들이 완치되었다고 한다.</p>
         </div>
@@ -43,12 +41,10 @@
         <div class="blog-basic-text">
           <p>환자들은 여러 나이대를 가진다. 어떤 나이대의 환자가 많은지 그리고 우리가 살펴볼 10대는 코로나 환자 중 얼마나 차지하고 있는지 확인해보고자 한다.</p>
         </div>
-        <br>
         <div class="blog-code">
           {% load staticfiles %}
-          <div style='position:relative;padding-bottom:calc(100% / 1.50)'><iframe src="{% static 'img/patient/02_age.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+          <img src="{% static 'img/patient/02_age.png' %}" class="img-responsive"></img>
         </div>
-        <br>
         <div class="blog-basic-text">
           <p>이 데이터에서 10대 감염자의 수는 총 196명이다. 이를 전체 환자(4004명) 중 10대 환자의 비율을 나타내면 4.146%임을 확인하였다.</p>
         </div>
@@ -62,12 +58,10 @@
         <div class="blog-basic-text">
           <p>학생이라는 신분을 가지는 10대 중 이 코로나 사태에 가장 큰 피해를 본 집단은 누구 일까? 바로 내년 성인이 되는 고등학교 3학년 학생들이다. 수능이라는 중요한 일을 앞두고 집중하기 어려운 환경이다. 이러한 시급한 상황을 반영하여 교육부는 고3 학생들을 가장 먼저 개학하여 수업을 받도록 진행하고 있다. 이후 다른 학년들은 순차적으로 개학을 진행하였다. 우리는 이러한 개학이 10대의 코로나 확진에 영향을 주는 것으로 보고 비교 분석해보았다. 개학은 20년 5월 20일, 고3 등교일을 기준으로 두었다.</p>
         </div>
-        <br>
         <div class="blog-code">
           {% load staticfiles %}
-          <div style='position:relative;padding-bottom:calc(100% / 1.50)'><iframe src="{% static 'img/patient/03_starting_school_10s_ratio.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+          <img src="{% static 'img/patient/03_starting_school_10s_ratio.png' %}" class="img-responsive"></img>
         </div>
-        <br>
         <div class="blog-basic-text">
           <p>개학 날짜인 20년 5월 20일 이전의 10대 감염자의 비율은 4.1%이며 개학 이후의 10대 감염자 비율은 5.1%임을 확인하였다. 이러한 자료를 근거로 볼 때, 10대는 개학 이후 코로나에 감염될 확인이 1% 정도 증가한 것을 확인할 수 있었다.</p>
         </div>
@@ -79,24 +73,20 @@
       <h2>개학 전, 후의 한국의 10대 코로나 환자들 감염 원인 확인</h2>
       <div class="col-sm-10">
       <h4>개학 전의 한국의 10대 코로나 환자들 감염 원인 확인</h4>
-      <br>
         <div class="blog-code">
           {% load staticfiles %}
-          <div style='position:relative;padding-bottom:calc(100% / 1.50)'><iframe src="{% static 'img/patient/04_10s_case_BSS.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+          <img src="{% static 'img/patient/04_10s_case_BSS.png' %}" class="img-responsive"></img>
         </div>
-        <br>
         <div class="blog-basic-text">
           <p>개학 전 10대의 코로나 감염 원인은 총 9개이다. 이중 타인 접촉으로 인한 감염이 가장 높음을 확인할 수 있다.</p>
         </div>
       </div>
       <div class="col-sm-10">
       <h4>개학 후의 한국의 10대 코로나 환자들 감염 원인 확인</h4>
-      <br>
         <div class="blog-code">
           {% load staticfiles %}
-          <div style='position:relative;padding-bottom:calc(100% / 1.50)'><iframe src="{% static 'img/patient/05_10s_case_ASS.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+          <img src="{% static 'img/patient/05_10s_case_ASS.png' %}" class="img-responsive"></img>
         </div>
-        <br>
         <div class="blog-basic-text">
           <p>개학 후 10대의 코로나 감염 원인은 총 4개이다. 이중 타인 접촉으로 인한 감염이 가장 높음을 확인할 수 있다. 이는 개학 전 10대의 주된 감염 원인과 같다.</p>
         </div>
