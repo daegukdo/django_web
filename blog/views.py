@@ -11,3 +11,6 @@ def analysis(request):
 
 def map(request):
     return render(request, 'page/map.html')
+
+def summary(request):
+    return render(request, 'page/summary.html')
